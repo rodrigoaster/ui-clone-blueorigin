@@ -1,16 +1,38 @@
-import { ReactNode } from 'react';
+import { OverlayDefault } from '../../components/OverlayDefault';
+import { Section } from '../../components/Section';
+import { Wrapper } from '../../components/Wrapper';
 
 import { Container } from './styles';
 
-interface HomeProps {
-  children: ReactNode;
-}
-
-export function Home({ children }: HomeProps) {
+export function Home() {
   return (
     <Container>
-      <h1>Home</h1>
-      {children}
+      <Wrapper>
+        <div>
+          {
+            [
+              "FIRST SECTION",
+              "SECOND SECTION",
+              "THIRD SECTION",
+              "FOUR SECTION",
+              "FIVE SECTION",
+            ].map(
+              sectionName => (
+              <Section 
+                key={sectionName}
+                children={
+                  <OverlayDefault 
+                    firstTitle='Teste1'
+                    secondTitle='Teste2'
+                    buttonText='TesteButton'
+                  />
+                }
+              />
+              )
+            )
+          }
+        </div>
+      </Wrapper>
     </Container>
   );
 }
