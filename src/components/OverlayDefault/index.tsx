@@ -1,22 +1,25 @@
-import { ReactNode } from 'react';
-
 import { Container } from './styles';
 
 interface OverlayDefaultProps {
   firstTitle: string;
   secondTitle: string;
   buttonText: string;
-  positionContainer: ReactNode;
 }
 
-export function OverlayDefault({ ...props }: OverlayDefaultProps) {
+export function OverlayDefault({ firstTitle, secondTitle, buttonText }: OverlayDefaultProps) {
   return (
     <Container>
       <div>
-        <h2>First Title</h2>
-        <h2>Second Title</h2>
+        <h2>
+          {firstTitle}
+        </h2>
+        <h2>
+          {secondTitle}
+        </h2>
+        <button>
+          {buttonText}
+        </button>
       </div>
-      <button>Button</button>
     </Container>
   );
 }
