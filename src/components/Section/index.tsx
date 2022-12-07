@@ -2,13 +2,13 @@ import { ReactNode } from 'react';
 
 import { Container } from './styles';
 
-interface SectionProps {
+interface SectionProps extends React.HTMLAttributes<HTMLDivElement>{
   children: ReactNode;
 }
 
-export function Section({ children }: SectionProps) {
+export function Section({ children, ...props}: SectionProps) {
   return (
-    <Container>
+    <Container {...props}>
       {children}
     </Container>
   );
