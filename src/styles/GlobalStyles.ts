@@ -10,10 +10,15 @@ export const GlobalStyles = createGlobalStyle`
 
     html {
         min-height: 100%;
+        background: #000000;
     }
 
     ul {
         list-style-type: none;
+    }
+    
+    h1, h2, h3, h4 {
+      text-transform: uppercase;
     }
 
     *, button, input {
