@@ -1,14 +1,12 @@
 import { OverlayDefault } from '../../components/OverlayDefault';
 import { Section } from '../../components/Section';
-import { Wrapper } from '../../components/Wrapper';
 
 import { Container } from './styles';
 
 export function Home() {
   return (
       <Container>
-          <Wrapper>
-              <div>
+          <div>
                   {
                       [
                           {sectionId: "Section One", title: "Build the future", titleTwo: "Join team blue", description: "", textBtn:"Learn more"},
@@ -34,8 +32,6 @@ export function Home() {
                       )
                   }
               </div>
-          </Wrapper>
-      </Container>
-
+          </Container>
   );
 }
