@@ -6,34 +6,36 @@ import { Container } from './styles';
 
 export function Home() {
   return (
-    <Container>
-      <Wrapper>
-        <div>
-          {
-            [
-              {title: 'BUILD THE FUTURE', titleTwo: 'JOIN TEAM BLUE', descriptionText: '', btnText: 'Learn More'},
-              {title: 'FLY TO SPACE ON', titleTwo: 'NEW SHEPARD', descriptionText: '', btnText: 'Become an Astronaut'},
-              {title: 'NEW GLENN', titleTwo: 'ORBITAL ROCKET', descriptionText: '', btnText: 'Explore New Glenn'},
-              {title: 'REUSABLE', titleTwo: 'ROCKET ENGINES', descriptionText: "Blue Origin's engines are powering the next generation of rockets for commercial, civil, national security and human spaceflight.", btnText: 'Explore Engines'},
-              {title: 'INTRODUCING', titleTwo: 'ORBITAL REEF', descriptionText: '', btnText: 'Meet Orbital Reef'},
-            ].map(sectionName => (
-              <Section 
-                key={sectionName.title}
-                className='bg'
-                children={
-                  <OverlayDefault 
-                    firstTitle={sectionName.title}
-                    secondTitle={sectionName.titleTwo}
-                    description={sectionName.descriptionText}
-                    buttonText={sectionName.btnText}
-                  />
-                }
-              />
-              )
-            )
-          }
-        </div>
-      </Wrapper>
-    </Container>
+      <Container>
+          <Wrapper>
+              <div>
+                  {
+                      [
+                          {sectionId: "Section One", title: "Build the future", titleTwo: "Join team blue", description: "", textBtn:"Learn more"},
+                          {sectionId: "Section Two", title: "Fly to space on", titleTwo: "New Shepard", description: "", textBtn:"Become an astronaut"},
+                          {sectionId: "Section Three", title: "New glenn", titleTwo: "Orbital rocket", description: "", textBtn:"Explore new glenn"},
+                          {sectionId: "Section Four", title: "Reusable", titleTwo: "Rocket engines", description: "Blue Origin's engines are powering the next generation of rockets for commercial, civil, national security and human spaceflight.", textBtn:"Explore engines"},
+                          {sectionId: "Section Five", title: "Introducing", titleTwo: "Orbital reef", description: "Orbital Reef will be the premier mixed-use space station in low Earth orbit. Blue Origin, Sierra Space, Boeing, Redwire Space, Genesis Engineering Solutions, and Arizona State University form the powerful industry and academic team to deliver Orbital Reef in this decade.", textBtn:"Meet orbital reef"},
+                      ].map(sectionName => (
+                              <Section
+                                  key={sectionName.sectionId}
+                                  className='bg'
+                                  children
+                                  overlayNode={
+                                      <OverlayDefault
+                                          firstTitle={sectionName.title}
+                                          secondTitle={sectionName.titleTwo}
+                                          description={sectionName.description}
+                                          buttonText={sectionName.textBtn}
+                                      />
+                                  }
+                              />
+                          )
+                      )
+                  }
+              </div>
+          </Wrapper>
+      </Container>
+
   );
 }
