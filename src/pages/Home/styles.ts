@@ -28,6 +28,7 @@ export const Container = styled.div`
         h2 {
             font-weight: lighter;
             line-height: 0.5;
+          
         }
 
         color: #fff;
@@ -42,7 +43,7 @@ export const Container = styled.div`
         padding-left: 120px;
 
         h2 {
-            line-height: 0.5;
+          line-height: 0.5;
         }
 
         h3 {
@@ -87,6 +88,16 @@ export const Container = styled.div`
             line-height: 0.5;
         }
 
-        color: #fff;
+      p {
+        font-size: 20px;
+        font-weight: normal;
+
+        width: 90%;
+        
+        margin: 20px auto;
+      }
+
+
+      color: #fff;
     }
 `;
