@@ -1,15 +1,15 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
-import { Container } from './styles';
+import { Container } from './styles'
 
 interface WrapperProps {
-  children: ReactNode;
+    children: ReactNode;
 }
 
 export function Wrapper({ children }: WrapperProps) {
-  return (
-    <Container>
-      {children}
-    </Container>
-  );
+    return (
+        <Container>
+            {children}
+        </Container>
+    );
 }
