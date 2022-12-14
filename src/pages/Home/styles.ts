@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+import {motion} from "framer-motion";
+
+export const Container = styled(motion.div)`
     .bg:nth-child(1) {
         display: flex;
         justify-content: flex-start;
@@ -8,31 +10,35 @@ export const Container = styled.div`
         background: #6F1A07;
         
         padding-left: 120px;
+      
+        color: #fff;
 
         h2 {
             font-weight: lighter;
             width: 70%;
             line-height: 1;
         }
-
-        color: #fff;
-
+        
+        h3 {
+            line-height: 0.9;
+            margin-bottom: 30px;
+        }
     }
     .bg:nth-child(2) {
         display: flex;
         justify-content: center;
         text-align: center;
 
-        background: #93E5AB;
+        background: #582707;
+        
+        color: #fff;
         
         h2 {
             font-weight: lighter;
             line-height: 0.5;
           
+            margin-top: 100px;
         }
-
-        color: #fff;
-
     }
     .bg:nth-child(3) {
         display: flex;
@@ -42,39 +48,41 @@ export const Container = styled.div`
 
         padding-left: 120px;
 
+        color: #fff;
+      
         h2 {
           line-height: 0.5;
+          
+          margin-top: 100px;
         }
 
         h3 {
             font-weight: lighter;
         }
-
-        color: #fff;
-
     }
     .bg:nth-child(4) {
         background: #4E878C;
 
+        padding-left: 50px;
+      
+        color: #fff;
+      
         h2 {
             font-weight: lighter;
             width: 70%;
             line-height: 0.5;
+
+            margin-top: 100px;
         }
 
         p {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: normal;
 
             width: 60%;
 
             margin-bottom: 20px;
         }
-
-        color: #fff;
-
-        padding-left: 50px;
-
     }
     .bg:nth-child(5) {
         display: flex;
@@ -83,21 +91,25 @@ export const Container = styled.div`
 
         background: #00241B;
 
+        color: #fff;
+      
         h2 {
             font-weight: lighter;
             line-height: 0.5;
+
+            margin-top: 130px;
+          
         }
 
-      p {
-        font-size: 20px;
-        font-weight: normal;
+        p {
+          font-size: 1.25rem;
+          font-weight: normal;
 
-        width: 90%;
+          width: 70%;
         
-        margin: 20px auto;
-      }
-
-
-      color: #fff;
+          text-align: center;
+        
+          margin: 20px auto;
+        }
     }
 `;

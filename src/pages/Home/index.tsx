@@ -5,7 +5,10 @@ import { Container } from './styles';
 
 export function Home() {
   return (
-      <Container>
+      <Container
+          animate={{ opacity: [0, 1] }}
+          transition={{ delay: 0.5 }}
+      >
           <div>
                   {
                       [
@@ -15,7 +18,8 @@ export function Home() {
                           {sectionId: "Section Four", title: "Reusable", titleTwo: "Rocket engines", description: "Blue Origin's engines are powering the next generation of rockets for commercial, civil, national security and human spaceflight.", textBtn:"Explore engines"},
                           {sectionId: "Section Five", title: "Introducing", titleTwo: "Orbital reef", description: "Orbital Reef will be the premier mixed-use space station in low Earth orbit. Blue Origin, Sierra Space, Boeing, Redwire Space, Genesis Engineering Solutions, and Arizona State University form the powerful industry and academic team to deliver Orbital Reef in this decade.", textBtn:"Meet orbital reef"},
                       ].map(sectionName => (
-                              <Section
+
+                                <Section
                                   key={sectionName.sectionId}
                                   className='bg'
                                   children
