@@ -5,6 +5,7 @@ import { Wrapper } from "./components/Wrapper";
 import { Heading } from "./components/Heading";
 
 import { motion } from "framer-motion";
+import {Footer} from "./components/Footer";
 
 export function App() {
     return (
@@ -16,6 +17,7 @@ export function App() {
         >
             <Home />
         </motion.div>
+        <Footer />
       <GlobalStyles />
     </Wrapper>
   )
