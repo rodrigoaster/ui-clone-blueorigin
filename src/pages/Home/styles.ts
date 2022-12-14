@@ -23,6 +23,15 @@ export const Container = styled(motion.div)`
             line-height: 0.9;
             margin-bottom: 30px;
         }
+      
+      @media (max-width: 670px) {
+        padding: 0 20px;
+        text-align: center;        
+        
+        h2 {
+          width: 100%;
+        }
+      }
     }
     .bg:nth-child(2) {
         display: flex;
@@ -39,6 +48,23 @@ export const Container = styled(motion.div)`
           
             margin-top: 100px;
         }
+
+      @media (max-width: 670px) {
+        padding: 0 20px;
+        justify-content: center;
+
+
+        h2 {
+          width: 100%;
+
+          line-height: 0.9;
+        }
+
+        h3 {
+          line-height: 0.9;
+
+        }
+      }
     }
     .bg:nth-child(3) {
         display: flex;
@@ -59,6 +85,23 @@ export const Container = styled(motion.div)`
         h3 {
             font-weight: lighter;
         }
+
+      @media (max-width: 670px) {
+        padding: 0 20px;
+        text-align: center;
+
+
+        h2 {
+          width: 100%;
+
+          line-height: 0.9;
+        }
+
+        h3 {
+          line-height: 0.9;
+
+        }
+      }
     }
     .bg:nth-child(4) {
         background: #4E878C;
@@ -83,6 +126,31 @@ export const Container = styled(motion.div)`
 
             margin-bottom: 20px;
         }
+
+      @media (max-width: 670px) {
+        padding: 0 20px;
+        text-align: center;
+
+
+        h2 {
+          width: 100%;
+
+          line-height: 0.9;
+        }
+
+        h3 {
+          line-height: 0.9;
+        }
+
+        p {
+          font-size: 1.25rem;
+          font-weight: normal;
+
+          width: 100%;
+
+          margin-bottom: 20px;
+        }
+      }
     }
     .bg:nth-child(5) {
         display: flex;
@@ -111,5 +179,30 @@ export const Container = styled(motion.div)`
         
           margin: 20px auto;
         }
+
+      @media (max-width: 670px) {
+        padding: 0 70px;
+        text-align: center;
+
+
+        h2 {
+          width: 100%;
+
+          line-height: 0.9;
+        }
+
+        h3 {
+          line-height: 0.9;
+        }
+
+        p {
+          font-size: 1.25rem;
+          font-weight: normal;
+
+          width: 100%;
+
+          margin-bottom: 20px;
+        }
+      }
     }
 `;

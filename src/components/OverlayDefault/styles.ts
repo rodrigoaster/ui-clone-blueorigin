@@ -20,6 +20,18 @@ export const ContainerBlock = styled.div`
         font-size: 70px;
         letter-spacing: 10px;
     }
+  
+  @media (max-width: 670px) {
+    > h2 {
+      font-size: 56px;
+      letter-spacing: 5px;
+    }
+
+    > h3 {
+      font-size: 56px;
+      letter-spacing: 10px;
+    }
+  }
 `
 
 export const ContainerAnimate = styled(motion.div)`
@@ -33,6 +45,18 @@ export const ContainerAnimate = styled(motion.div)`
     }
 
     padding-top: 30px;
+
+  @media (max-width: 670px) {
+    > h2 {
+      font-size: 56px;
+      letter-spacing: 5px;
+    }
+
+    > h3 {
+      font-size: 56px;
+      letter-spacing: 10px;
+    }
+  }
 `
 
 export const Button = styled.button`

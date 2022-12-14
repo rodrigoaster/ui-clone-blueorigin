@@ -23,6 +23,10 @@ export const NavItem = styled.li`
 
 export const Navlinks = styled.ul`
     display: flex;
+
+  @media (max-width: 835px) {
+    display: none;
+  }
 `;
 
 export const Navlink = styled.a`
@@ -64,5 +68,52 @@ export const Navlink = styled.a`
 `;
 
 export const LogoHeader = styled.div`
-     
+
+  @media (max-width: 657px) {
+    justify-content: center;
+  }
+`
+
+
+export const MenuMobile = styled.div`
+  width: 0;
+  height: .25rem;
+  
+  margin-right: 2rem;
+
+  display: none;
+  
+  background: #fff;
+  
+  cursor: pointer;
+  
+  z-index: 99;
+  
+  ::after {
+    width: 0;
+    height: 0.25rem;
+
+    background: #fff;
+    content: " ";
+    
+    margin: .5rem 0;
+    
+    display: none;
+
+    cursor: pointer;
+
+    z-index: 99;
+  }
+  
+  @media (max-width: 835px) {
+    width: 30px;
+    
+    display: block;
+    
+    ::after {
+      width: 30px;
+      
+      display: block;
+    }
+  }
 `
