@@ -20,7 +20,7 @@
   <ol>
     <li>
       Run
-      <code>yarn install</code>
+      <code>yarn</code>
       or
       <code>npm install</code>
     </li>
