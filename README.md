@@ -27,6 +27,8 @@
     <li>
       Run
       <code>yarn dev</code>
+      or
+      <code>npm run dev</code>
     </li>
   </ol>  
 </article>
