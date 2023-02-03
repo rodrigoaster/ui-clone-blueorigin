@@ -49,7 +49,7 @@ export const Navlink = styled.a`
 
 
     bottom: 0;
-    left: 0;
+    right: 0;
 
     margin-top: 6px;
     background-color: #fff;
@@ -62,7 +62,10 @@ export const Navlink = styled.a`
   :hover {
     ::after {
       width: 100%;
+
+      left: 0;  
     }
+
   }
  
 `;
